@@ -1,0 +1,101 @@
+.App {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px; 
+  opacity: 0.7;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  display: block;
+  width: 700px;
+  margin: 50px auto 0;
+}
+
+@media screen and (min-width: 720px) {
+ .App {
+   display: flex;
+   width: 70%;
+   margin: 0 auto;
+   flex-flow: column;
+   box-shadow: 1px 1px 20px black;
+ }}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 16px;
+  font-weight: 600; 
+  width: 60px;
+  margin: 10px 50px 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  color: #333;
+}
+/* Heading */
+h3,
+label[for='new-task'] {
+  color: #333;
+  font-weight: 800;
+  font-size: 20px;
+  border-bottom: 2px solid #333;
+  padding: 30px 10px 10px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+input {
+  margin: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background:white;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+/* Item list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li >  input[type="text"] {
+  width: 226px;
+}
+li > .delete:hover {
+  color: #CF2323;
+}
+
+.Done label {
+  text-decoration: line-through;
+  color: #888;
+}
