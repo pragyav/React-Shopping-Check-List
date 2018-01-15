@@ -35,9 +35,10 @@ addItem = (a, b) => {
   })
 }
 
-deleteItem = (item) => {       
+deleteItem = item => {       
   this.setState({
-    todoItems: this.state.todoItems.filter(l => l.label !== item.label)
+    todoItems: this.state.todoItems.filter(l => l.label !== item.label),
+	  doneList: this.state.doneList.filter(l => l.label !== item.label)
   })
 }
   
