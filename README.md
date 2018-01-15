@@ -1,4 +1,4 @@
-React Shopping Check List, Integrify Academy Task5
+React Shopping Check List, Integrify Task5
 ____________________________________________________
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
